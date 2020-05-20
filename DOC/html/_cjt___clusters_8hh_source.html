@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Practica PRO2.Primavera 2020: Fichero Fuente Cjt_Clusters.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Practica PRO2.Primavera 2020
+   &#160;<span id="projectnumber">version 1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cjt_Clusters.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cjt___clusters_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_taula__de__distancies_8hh.html">Taula_de_distancies.hh</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_cjt___especies_8hh.html">Cjt_Especies.hh</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef CJT_CLUSTERS_HH</span></div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_cjt___clusters_8hh.html#ab12f5a8f10a954fe712afecc6ff2eca6">    8</a></span>&#160;<span class="preprocessor">#define CJT_CLUSTERS_HH</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bin_tree_8hh.html">BinTree.hh</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_cjt___clusters.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cjt___clusters.html">Cjt_Clusters</a> {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        map&lt;string, BinTree&lt; pair&lt;string, double&gt;&gt;&gt; Arbre;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_taula__de__distancies.html">Taula_de_distancies</a> Taula_Clusters;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        </div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        </div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">//Constructores:</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        </div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_cjt___clusters.html#a2e55759944a78043744103e19dd87c1c">Cjt_Clusters</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        </div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">//Modificadores:</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        </div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_cjt___clusters.html#a7dec4a423a1dbcf6d0351e00dd653eee">inicializa_clusters</a>(<a class="code" href="class_cjt___especies.html">Cjt_Especies</a>&amp; Mostra, <a class="code" href="class_taula__de__distancies.html">Taula_de_distancies</a>&amp; Taula);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        </div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_cjt___clusters.html#a1656b81e5200625b44c8f138c09af068">ejecutar_paso_wpgma</a> ();</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        </div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">//Escriure:</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        </div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_cjt___clusters.html#a284f66b3e8c47eded1e24af805b81505">imprime_cluster</a>(<a class="code" href="class_bin_tree.html">BinTree</a>&lt;pair&lt;string,double&gt;&gt; arbre);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        </div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_cjt___clusters.html#a19510eceda5d5bf39d7091a28bf5f00c">imprime_cluster_aux</a> (<a class="code" href="class_bin_tree.html">BinTree</a>&lt;pair&lt;string,double&gt;&gt;&amp; arbre);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        </div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_cjt___clusters.html#a95262506a2fdc5455ce104fb84649ee9">imprime_arbol_filogenetico</a>();</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        </div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_cjt___clusters.html#a6a261f0f5ca471e257d6b17e91b4887a">taula_clusters_imprime</a>();</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        </div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_cjt___clusters.html#a4fcda36a68e8fe48d787dfd14e9b222b">existe_cluster</a>(<span class="keywordtype">string</span> <span class="keywordtype">id</span>);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        </div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_cjt___clusters.html#ad00d2fe80f0b0dc1e593a91f8be6b761">numero_clusters</a>();</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        </div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="class_bin_tree.html">BinTree&lt;pair&lt;string,double&gt;</a>&gt; <a class="code" href="class_cjt___clusters.html#aca3506a7084d53e251ff052b0bbaf5bb">retorna_subarb</a>(<span class="keywordtype">string</span> <span class="keywordtype">id</span>);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        </div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    </div><div class="ttc" id="class_cjt___clusters_html_a1656b81e5200625b44c8f138c09af068"><div class="ttname"><a href="class_cjt___clusters.html#a1656b81e5200625b44c8f138c09af068">Cjt_Clusters::ejecutar_paso_wpgma</a></div><div class="ttdeci">void ejecutar_paso_wpgma()</div><div class="ttdoc">Modificadora de ejecutar paso wpgma. </div></div>
+<div class="ttc" id="class_cjt___clusters_html_a2e55759944a78043744103e19dd87c1c"><div class="ttname"><a href="class_cjt___clusters.html#a2e55759944a78043744103e19dd87c1c">Cjt_Clusters::Cjt_Clusters</a></div><div class="ttdeci">Cjt_Clusters()</div><div class="ttdoc">Creadora por defecto. </div></div>
+<div class="ttc" id="class_cjt___clusters_html_a284f66b3e8c47eded1e24af805b81505"><div class="ttname"><a href="class_cjt___clusters.html#a284f66b3e8c47eded1e24af805b81505">Cjt_Clusters::imprime_cluster</a></div><div class="ttdeci">void imprime_cluster(BinTree&lt; pair&lt; string, double &gt;&gt; arbre)</div><div class="ttdoc">Operación de escritura. </div></div>
+<div class="ttc" id="class_cjt___especies_html"><div class="ttname"><a href="class_cjt___especies.html">Cjt_Especies</a></div><div class="ttdoc">Representa una Cjt_Especies. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt___especies_8hh_source.html#l00019">Cjt_Especies.hh:19</a></div></div>
+<div class="ttc" id="_bin_tree_8hh_html"><div class="ttname"><a href="_bin_tree_8hh.html">BinTree.hh</a></div></div>
+<div class="ttc" id="class_bin_tree_html"><div class="ttname"><a href="class_bin_tree.html">BinTree</a></div><div class="ttdef"><b>Definition:</b> <a href="_bin_tree_8hh_source.html#l00012">BinTree.hh:12</a></div></div>
+<div class="ttc" id="class_cjt___clusters_html_a7dec4a423a1dbcf6d0351e00dd653eee"><div class="ttname"><a href="class_cjt___clusters.html#a7dec4a423a1dbcf6d0351e00dd653eee">Cjt_Clusters::inicializa_clusters</a></div><div class="ttdeci">void inicializa_clusters(Cjt_Especies &amp;Mostra, Taula_de_distancies &amp;Taula)</div><div class="ttdoc">Modificadora de inicializa el clúster. </div></div>
+<div class="ttc" id="class_cjt___clusters_html_a4fcda36a68e8fe48d787dfd14e9b222b"><div class="ttname"><a href="class_cjt___clusters.html#a4fcda36a68e8fe48d787dfd14e9b222b">Cjt_Clusters::existe_cluster</a></div><div class="ttdeci">bool existe_cluster(string id)</div><div class="ttdoc">Consultora existencia de cluster. </div></div>
+<div class="ttc" id="class_cjt___clusters_html_aca3506a7084d53e251ff052b0bbaf5bb"><div class="ttname"><a href="class_cjt___clusters.html#aca3506a7084d53e251ff052b0bbaf5bb">Cjt_Clusters::retorna_subarb</a></div><div class="ttdeci">BinTree&lt; pair&lt; string, double &gt; &gt; retorna_subarb(string id)</div><div class="ttdoc">Consultora del clusters. </div></div>
+<div class="ttc" id="_cjt___especies_8hh_html"><div class="ttname"><a href="_cjt___especies_8hh.html">Cjt_Especies.hh</a></div><div class="ttdoc">Especificación de la clase Cjt_Especies. </div></div>
+<div class="ttc" id="class_cjt___clusters_html"><div class="ttname"><a href="class_cjt___clusters.html">Cjt_Clusters</a></div><div class="ttdoc">Representa una Cjt_Clusters. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt___clusters_8hh_source.html#l00022">Cjt_Clusters.hh:22</a></div></div>
+<div class="ttc" id="class_cjt___clusters_html_a6a261f0f5ca471e257d6b17e91b4887a"><div class="ttname"><a href="class_cjt___clusters.html#a6a261f0f5ca471e257d6b17e91b4887a">Cjt_Clusters::taula_clusters_imprime</a></div><div class="ttdeci">void taula_clusters_imprime()</div><div class="ttdoc">Operación de escritura. </div></div>
+<div class="ttc" id="class_cjt___clusters_html_a19510eceda5d5bf39d7091a28bf5f00c"><div class="ttname"><a href="class_cjt___clusters.html#a19510eceda5d5bf39d7091a28bf5f00c">Cjt_Clusters::imprime_cluster_aux</a></div><div class="ttdeci">void imprime_cluster_aux(BinTree&lt; pair&lt; string, double &gt;&gt; &amp;arbre)</div><div class="ttdoc">Operación de escritura. </div></div>
+<div class="ttc" id="_taula__de__distancies_8hh_html"><div class="ttname"><a href="_taula__de__distancies_8hh.html">Taula_de_distancies.hh</a></div><div class="ttdoc">Especificación de la clase Taula_de_distancies. </div></div>
+<div class="ttc" id="class_cjt___clusters_html_ad00d2fe80f0b0dc1e593a91f8be6b761"><div class="ttname"><a href="class_cjt___clusters.html#ad00d2fe80f0b0dc1e593a91f8be6b761">Cjt_Clusters::numero_clusters</a></div><div class="ttdeci">int numero_clusters()</div><div class="ttdoc">Consultora del tamaño del conjunto de clusters. </div></div>
+<div class="ttc" id="class_taula__de__distancies_html"><div class="ttname"><a href="class_taula__de__distancies.html">Taula_de_distancies</a></div><div class="ttdoc">Representa una Taula_de_distancies. </div><div class="ttdef"><b>Definition:</b> <a href="_taula__de__distancies_8hh_source.html#l00023">Taula_de_distancies.hh:23</a></div></div>
+<div class="ttc" id="class_cjt___clusters_html_a95262506a2fdc5455ce104fb84649ee9"><div class="ttname"><a href="class_cjt___clusters.html#a95262506a2fdc5455ce104fb84649ee9">Cjt_Clusters::imprime_arbol_filogenetico</a></div><div class="ttdeci">void imprime_arbol_filogenetico()</div><div class="ttdoc">Operación de escritura. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

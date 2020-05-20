@@ -1,0 +1,17 @@
+# lee_cjt_especies
+
+# imprime_cjt_especies
+a AAAAGATGACCAGCGTAATG
+b GCAACCTTTGTGGGCGCAGT
+c ACGATTTGCGTAAGCTATGT
+d GCTCCTGTCCGTTTCAGCCG
+e TACACCATTAACCGGTGGGG
+
+# tabla_distancias
+a: b (90.9091) c (71.4286) d (90.9091) e (90.9091)
+b: c (87.5) d (87.5) e (83.871)
+c: d (83.871) e (94.1176)
+d: e (97.1429)
+e:
+
+# imprime_arbol_filogenetico

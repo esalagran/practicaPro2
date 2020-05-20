@@ -1,0 +1,39 @@
+int main(){
+    poblacio mostra;
+    mostra.llegir_poblacio();
+    string ordre;
+    cin >> ordre;
+    string nom;
+    while (ordre != "acabar"){
+        if (ordre == "anadir_individuo"){
+            string name;
+            cin >> name;
+            mostra.afegir_individu(name);
+        }
+        else if (ordre == "reproduccion_sexual" ){
+            string pare, fill;
+            cin >> nom >> pare >> fill;
+            mostra.reproduccio(nom, pare, fill);
+        }
+        else if (ordre == "escribir_arbol_genealogico"){
+            cin >> nom;
+            mostra.escriure_arbre_genealogic(nom);
+        }
+        
+        else if (ordre == "escribir_poblacion"){
+            mostra.escriure_poblacio();
+        }
+        else if (ordre == "escribir_genotipo"){
+         cin >> nom;
+         mostra.escriure_genotip(nom);
+        }
+        else if (ordre == "completar_arbol_genealogico"){
+            arbregenealogic arb;
+            arb.arbre_parcial(mostra);
+        }
+        
+        cin >> ordre;
+    }
+    cout << "acabar" << endl; 
+    
+}

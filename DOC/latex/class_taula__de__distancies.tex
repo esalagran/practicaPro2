@@ -1,0 +1,192 @@
+\hypertarget{class_taula__de__distancies}{}\section{Referencia de la Clase Taula\+\_\+de\+\_\+distancies}
+\label{class_taula__de__distancies}\index{Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}}
+
+
+Representa una \hyperlink{class_taula__de__distancies}{Taula\+\_\+de\+\_\+distancies}.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_taula__de__distancies_a1524c765545a07965c2498d7d7be0c0d}{Taula\+\_\+de\+\_\+distancies} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \hyperlink{class_taula__de__distancies_a6202c78b8a7c330d1be356d86e644a89}{afegeix\+\_\+especie} (string id, \hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies} \&Mostra)
+\begin{DoxyCompactList}\small\item\em Modificadora de añadir una especie. \end{DoxyCompactList}\item 
+void \hyperlink{class_taula__de__distancies_ab7b1113061a5022c4444ff299e143f50}{eliminar\+\_\+especie} (string ID)
+\begin{DoxyCompactList}\small\item\em Modificadora de eliminar una especie. \end{DoxyCompactList}\item 
+double \hyperlink{class_taula__de__distancies_af3dfa32f4b29765b4ad1968bbb17ee16}{distancia} (string I\+D1, string I\+D2)
+\begin{DoxyCompactList}\small\item\em Consultora de distancia entre dos especies. \end{DoxyCompactList}\item 
+void \hyperlink{class_taula__de__distancies_a494108f6c1af52fd9f8032d1ec78fc32}{tabla\+\_\+distancias} ()
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\item 
+double \hyperlink{class_taula__de__distancies_a53972d105426593de32bd70cdd297ccd}{obtener\+\_\+distancia} (vector$<$ string $>$ \&e1, vector$<$ string $>$ \&e2)
+\begin{DoxyCompactList}\small\item\em Consultora de distancia entre los subgenes de dos especies. \end{DoxyCompactList}\item 
+void \hyperlink{class_taula__de__distancies_afb9dd4b7cca03fd7da25d60a8603e765}{buidar\+\_\+taula} ()
+\begin{DoxyCompactList}\small\item\em Modificadora de la taula. \end{DoxyCompactList}\item 
+pair$<$ string, string $>$ \hyperlink{class_taula__de__distancies_a416612e603b4efafa816db9da4164b0b}{dist\+\_\+min} ()
+\begin{DoxyCompactList}\small\item\em Consultora de las especies con menor distancia. \end{DoxyCompactList}\item 
+void \hyperlink{class_taula__de__distancies_ae2fadcfa91e0c11028b0cec49ba77a0f}{afegeix\+\_\+especie\+\_\+cluster} (string id, pair$<$ string, string $>$ \&id\+\_\+minims)
+\begin{DoxyCompactList}\small\item\em Modificadora de la taula. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa una \hyperlink{class_taula__de__distancies}{Taula\+\_\+de\+\_\+distancies}. 
+
+Contiene un map con clave string i valor map. el segundo map tiene clave string i valor double que sirve para anotar la distancia entre especies 
+
+Definición en la línea 23 del archivo Taula\+\_\+de\+\_\+distancies.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_taula__de__distancies_a1524c765545a07965c2498d7d7be0c0d}\label{class_taula__de__distancies_a1524c765545a07965c2498d7d7be0c0d}} 
+\index{Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}!Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}}
+\index{Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}!Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}}
+\subsubsection{\texorpdfstring{Taula\+\_\+de\+\_\+distancies()}{Taula\_de\_distancies()}}
+{\footnotesize\ttfamily Taula\+\_\+de\+\_\+distancies\+::\+Taula\+\_\+de\+\_\+distancies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una tabla de distancias vacía 
+\end{DoxyPostcond}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_taula__de__distancies_a6202c78b8a7c330d1be356d86e644a89}\label{class_taula__de__distancies_a6202c78b8a7c330d1be356d86e644a89}} 
+\index{Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}!afegeix\+\_\+especie@{afegeix\+\_\+especie}}
+\index{afegeix\+\_\+especie@{afegeix\+\_\+especie}!Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}}
+\subsubsection{\texorpdfstring{afegeix\+\_\+especie()}{afegeix\_especie()}}
+{\footnotesize\ttfamily void Taula\+\_\+de\+\_\+distancies\+::afegeix\+\_\+especie (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{\hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies} \&}]{Mostra }\end{DoxyParamCaption})}
+
+
+
+Modificadora de añadir una especie. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a contener una especie mas y mas distancias 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_taula__de__distancies_ab7b1113061a5022c4444ff299e143f50}\label{class_taula__de__distancies_ab7b1113061a5022c4444ff299e143f50}} 
+\index{Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}!eliminar\+\_\+especie@{eliminar\+\_\+especie}}
+\index{eliminar\+\_\+especie@{eliminar\+\_\+especie}!Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}}
+\subsubsection{\texorpdfstring{eliminar\+\_\+especie()}{eliminar\_especie()}}
+{\footnotesize\ttfamily void Taula\+\_\+de\+\_\+distancies\+::eliminar\+\_\+especie (\begin{DoxyParamCaption}\item[{string}]{ID }\end{DoxyParamCaption})}
+
+
+
+Modificadora de eliminar una especie. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape L\textquotesingle{}especie ha d\textquotesingle{}existir} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a contener una especie menos y menos distancias 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_taula__de__distancies_af3dfa32f4b29765b4ad1968bbb17ee16}\label{class_taula__de__distancies_af3dfa32f4b29765b4ad1968bbb17ee16}} 
+\index{Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}!distancia@{distancia}}
+\index{distancia@{distancia}!Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}}
+\subsubsection{\texorpdfstring{distancia()}{distancia()}}
+{\footnotesize\ttfamily double Taula\+\_\+de\+\_\+distancies\+::distancia (\begin{DoxyParamCaption}\item[{string}]{I\+D1,  }\item[{string}]{I\+D2 }\end{DoxyParamCaption})}
+
+
+
+Consultora de distancia entre dos especies. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la distancia entre la primera especie y la segunda 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_taula__de__distancies_a494108f6c1af52fd9f8032d1ec78fc32}\label{class_taula__de__distancies_a494108f6c1af52fd9f8032d1ec78fc32}} 
+\index{Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}!tabla\+\_\+distancias@{tabla\+\_\+distancias}}
+\index{tabla\+\_\+distancias@{tabla\+\_\+distancias}!Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}}
+\subsubsection{\texorpdfstring{tabla\+\_\+distancias()}{tabla\_distancias()}}
+{\footnotesize\ttfamily void Taula\+\_\+de\+\_\+distancies\+::tabla\+\_\+distancias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Escribe el contenido del parámetro implícito por el canal estándar de salida 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_taula__de__distancies_a53972d105426593de32bd70cdd297ccd}\label{class_taula__de__distancies_a53972d105426593de32bd70cdd297ccd}} 
+\index{Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}!obtener\+\_\+distancia@{obtener\+\_\+distancia}}
+\index{obtener\+\_\+distancia@{obtener\+\_\+distancia}!Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}}
+\subsubsection{\texorpdfstring{obtener\+\_\+distancia()}{obtener\_distancia()}}
+{\footnotesize\ttfamily double Taula\+\_\+de\+\_\+distancies\+::obtener\+\_\+distancia (\begin{DoxyParamCaption}\item[{vector$<$ string $>$ \&}]{e1,  }\item[{vector$<$ string $>$ \&}]{e2 }\end{DoxyParamCaption})}
+
+
+
+Consultora de distancia entre los subgenes de dos especies. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es la distancia entre la primera especie y la segunda 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_taula__de__distancies_afb9dd4b7cca03fd7da25d60a8603e765}\label{class_taula__de__distancies_afb9dd4b7cca03fd7da25d60a8603e765}} 
+\index{Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}!buidar\+\_\+taula@{buidar\+\_\+taula}}
+\index{buidar\+\_\+taula@{buidar\+\_\+taula}!Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}}
+\subsubsection{\texorpdfstring{buidar\+\_\+taula()}{buidar\_taula()}}
+{\footnotesize\ttfamily void Taula\+\_\+de\+\_\+distancies\+::buidar\+\_\+taula (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Modificadora de la taula. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape L\textquotesingle{}especie ha d\textquotesingle{}existir} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a estar vacío 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_taula__de__distancies_a416612e603b4efafa816db9da4164b0b}\label{class_taula__de__distancies_a416612e603b4efafa816db9da4164b0b}} 
+\index{Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}!dist\+\_\+min@{dist\+\_\+min}}
+\index{dist\+\_\+min@{dist\+\_\+min}!Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}}
+\subsubsection{\texorpdfstring{dist\+\_\+min()}{dist\_min()}}
+{\footnotesize\ttfamily pair$<$string,string$>$ Taula\+\_\+de\+\_\+distancies\+::dist\+\_\+min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora de las especies con menor distancia. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un pair formado de dos strings que representan los id de las especies de menor distancia 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_taula__de__distancies_ae2fadcfa91e0c11028b0cec49ba77a0f}\label{class_taula__de__distancies_ae2fadcfa91e0c11028b0cec49ba77a0f}} 
+\index{Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}!afegeix\+\_\+especie\+\_\+cluster@{afegeix\+\_\+especie\+\_\+cluster}}
+\index{afegeix\+\_\+especie\+\_\+cluster@{afegeix\+\_\+especie\+\_\+cluster}!Taula\+\_\+de\+\_\+distancies@{Taula\+\_\+de\+\_\+distancies}}
+\subsubsection{\texorpdfstring{afegeix\+\_\+especie\+\_\+cluster()}{afegeix\_especie\_cluster()}}
+{\footnotesize\ttfamily void Taula\+\_\+de\+\_\+distancies\+::afegeix\+\_\+especie\+\_\+cluster (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{pair$<$ string, string $>$ \&}]{id\+\_\+minims }\end{DoxyParamCaption})}
+
+
+
+Modificadora de la taula. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa tener una especie mas 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_taula__de__distancies_8hh}{Taula\+\_\+de\+\_\+distancies.\+hh}\end{DoxyCompactItemize}

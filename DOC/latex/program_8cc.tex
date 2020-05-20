@@ -1,0 +1,197 @@
+\hypertarget{program_8cc}{}\section{Referencia del Archivo program.\+cc}
+\label{program_8cc}\index{program.\+cc@{program.\+cc}}
+
+
+Programa principal para el ejercicio {\itshape Practica P\+R\+O2.\+Primavera 2020}.  
+
+
+Dependencia gráfica adjunta para program.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{program_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{program_8cc_a1a078453d3bb294251b421f3b4cf7f3c}{crea\+\_\+especie} (int k, \hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies} \&Mostra, \hyperlink{class_taula__de__distancies}{Taula\+\_\+de\+\_\+distancies} \&Taula, string ID, string gen)
+\item 
+int \hyperlink{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Programa principal para el ejercicio {\itshape Practica P\+R\+O2.\+Primavera 2020}. 
+
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{program_8cc_a1a078453d3bb294251b421f3b4cf7f3c}\label{program_8cc_a1a078453d3bb294251b421f3b4cf7f3c}} 
+\index{program.\+cc@{program.\+cc}!crea\+\_\+especie@{crea\+\_\+especie}}
+\index{crea\+\_\+especie@{crea\+\_\+especie}!program.\+cc@{program.\+cc}}
+\subsubsection{\texorpdfstring{crea\+\_\+especie()}{crea\_especie()}}
+{\footnotesize\ttfamily void crea\+\_\+especie (\begin{DoxyParamCaption}\item[{int}]{k,  }\item[{\hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies} \&}]{Mostra,  }\item[{\hyperlink{class_taula__de__distancies}{Taula\+\_\+de\+\_\+distancies} \&}]{Taula,  }\item[{string}]{ID,  }\item[{string}]{gen }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 18 del archivo program.\+cc.
+
+
+\begin{DoxyCode}
+18                                                                                                   \{
+19     \textcolor{keywordtype}{bool} creado = Mostra.\hyperlink{class_cjt___especies_a39a4191697228fea8780516f4cd5da85}{existe\_especie}(ID);
+20     \textcolor{keywordflow}{if} (creado) \{
+21         cout << \textcolor{stringliteral}{"ERROR: La especie "} << ID << \textcolor{stringliteral}{" ya existe."} << endl;
+22     \}
+23     \textcolor{keywordflow}{else} \{
+24         Mostra.\hyperlink{class_cjt___especies_a8c90cec35ff5469f0b8e193308569e4b}{crea\_especie}(ID, gen, k);
+25         Taula.\hyperlink{class_taula__de__distancies_a6202c78b8a7c330d1be356d86e644a89}{afegeix\_especie}(ID, Mostra);
+26     \}
+27 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{program.\+cc@{program.\+cc}!main@{main}}
+\index{main@{main}!program.\+cc@{program.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 29 del archivo program.\+cc.
+
+
+\begin{DoxyCode}
+29             \{
+30     \textcolor{keywordtype}{int} k;
+31     cin >> k;
+32     \hyperlink{class_cjt___especies}{Cjt\_Especies} Mostra;
+33     \hyperlink{class_cjt___clusters}{Cjt\_Clusters} Arbre;
+34     \hyperlink{class_taula__de__distancies}{Taula\_de\_distancies} Taula;
+35     \textcolor{keywordtype}{string} ordre;
+36     cin >> ordre;
+37     \textcolor{keywordflow}{while} (ordre != \textcolor{stringliteral}{"fin"}) \{
+38         \textcolor{keywordflow}{if} (ordre == \textcolor{stringliteral}{"crea\_especie"}) \{
+39             \textcolor{keywordtype}{string} ID, gen;
+40             cin >> ID >> gen;
+41             cout << \textcolor{stringliteral}{"# "} << ordre <<\textcolor{stringliteral}{" "} << ID << \textcolor{stringliteral}{" "} << gen << endl;
+42             \hyperlink{program_8cc_a1a078453d3bb294251b421f3b4cf7f3c}{crea\_especie}(k, Mostra, Taula, ID, gen);
+43         \}
+44         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ordre == \textcolor{stringliteral}{"obtener\_gen"}) \{
+45             \textcolor{keywordtype}{string} ID;
+46             cin >> ID;
+47             cout << \textcolor{stringliteral}{"# "} << ordre << \textcolor{stringliteral}{" "} << ID << endl;
+48             \textcolor{keywordtype}{bool} existe = Mostra.\hyperlink{class_cjt___especies_a39a4191697228fea8780516f4cd5da85}{existe\_especie}(ID);
+49             \textcolor{keywordflow}{if} (existe) \{
+50                 \textcolor{keywordtype}{string} gen;
+51                 gen = Mostra.\hyperlink{class_cjt___especies_af5821877f200218836053864ba8e9462}{obtener\_gen}(ID);
+52                 cout << gen << endl;
+53             \}
+54             \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"ERROR: La especie "} << ID << \textcolor{stringliteral}{" no existe."} << endl;
+55         \}
+56         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ordre == \textcolor{stringliteral}{"distancia"}) \{
+57             \textcolor{keywordtype}{string} ID1, ID2;
+58             cin >> ID1 >> ID2;
+59             cout << \textcolor{stringliteral}{"# "} << ordre << \textcolor{stringliteral}{" "} << ID1 << \textcolor{stringliteral}{" "} << ID2 << endl;
+60             \textcolor{keywordtype}{bool} e1\_existe = Mostra.\hyperlink{class_cjt___especies_a39a4191697228fea8780516f4cd5da85}{existe\_especie}(ID1);
+61             \textcolor{keywordtype}{bool} e2\_existe = Mostra.\hyperlink{class_cjt___especies_a39a4191697228fea8780516f4cd5da85}{existe\_especie}(ID2);
+62             \textcolor{keywordflow}{if} (e1\_existe and e2\_existe) \{
+63                 \textcolor{keywordtype}{double} dist;
+64                 dist = Taula.\hyperlink{class_taula__de__distancies_af3dfa32f4b29765b4ad1968bbb17ee16}{distancia}(ID1,ID2); 
+65                 cout << dist << endl;
+66             \}
+67             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (not e1\_existe and e2\_existe) \{
+68                 cout << \textcolor{stringliteral}{"ERROR: La especie "} << ID1 << \textcolor{stringliteral}{" no existe."} << endl;
+69             \}
+70             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (e1\_existe and not e2\_existe) cout << \textcolor{stringliteral}{"ERROR: La especie "} << ID2 << \textcolor{stringliteral}{" no existe."} << 
+      endl;
+71             \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"ERROR: La especie "} << ID1 << \textcolor{stringliteral}{" y la especie "} << ID2 << \textcolor{stringliteral}{" no existen."} << endl;
+72         \}
+73         
+74         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ordre == \textcolor{stringliteral}{"elimina\_especie"}) \{
+75             \textcolor{keywordtype}{string} ID;
+76             cin >> ID;
+77             cout << \textcolor{stringliteral}{"# "} << ordre << \textcolor{stringliteral}{" "} << ID << endl;
+78             \textcolor{keywordtype}{bool} eliminado = Mostra.\hyperlink{class_cjt___especies_a39a4191697228fea8780516f4cd5da85}{existe\_especie}(ID);
+79             \textcolor{keywordflow}{if} (eliminado) \{
+80                 Taula.\hyperlink{class_taula__de__distancies_ab7b1113061a5022c4444ff299e143f50}{eliminar\_especie}(ID);
+81                 Mostra.\hyperlink{class_cjt___especies_aef76f607ead23a635d7a8b2c9a844327}{elimina\_especie}(ID);
+82             \}
+83             \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"ERROR: La especie "} << ID << \textcolor{stringliteral}{" no existe."} << endl;
+84         \}
+85         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ordre == \textcolor{stringliteral}{"existe\_especie"}) \{
+86             \textcolor{keywordtype}{string} ID;
+87             cin >> ID;
+88             cout << \textcolor{stringliteral}{"# "} << ordre << \textcolor{charliteral}{' '} << ID << endl;
+89             \textcolor{keywordtype}{bool} exist = Mostra.\hyperlink{class_cjt___especies_a39a4191697228fea8780516f4cd5da85}{existe\_especie}(ID);
+90             \textcolor{keywordflow}{if} (exist) \{
+91                 cout << \textcolor{stringliteral}{"SI"} << endl;
+92             \}
+93             \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"NO"} << endl;
+94         \}
+95         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ordre == \textcolor{stringliteral}{"lee\_cjt\_especies"}) \{
+96             \textcolor{keywordtype}{int} n;
+97             cin >> n;
+98             cout << \textcolor{stringliteral}{"# "} << ordre << endl;
+99             Mostra.\hyperlink{class_cjt___especies_a341dfedcac85d19e084d68f7611af8f9}{eliminar\_totes}();
+100             Taula.\hyperlink{class_taula__de__distancies_afb9dd4b7cca03fd7da25d60a8603e765}{buidar\_taula}();
+101             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < n; ++i) \{
+102                 \textcolor{keywordtype}{string} ID, gen;
+103                 cin >> ID >> gen;
+104                 \hyperlink{program_8cc_a1a078453d3bb294251b421f3b4cf7f3c}{crea\_especie}(k, Mostra, Taula, ID, gen);
+105             \}
+106         \}
+107         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ordre == \textcolor{stringliteral}{"imprime\_cjt\_especies"}) \{
+108             cout << \textcolor{stringliteral}{"# "} << ordre << endl;
+109             Mostra.\hyperlink{class_cjt___especies_a61b0168970e926d3a27faf3f31ad2869}{imprime\_cjt\_especies}();
+110         \}
+111         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ordre == \textcolor{stringliteral}{"tabla\_distancias"}) \{
+112             cout << \textcolor{stringliteral}{"# "} << ordre << endl;
+113             \hyperlink{class_taula__de__distancies}{Taula\_de\_distancies} taula\_aux = Taula;
+114             taula\_aux.\hyperlink{class_taula__de__distancies_a494108f6c1af52fd9f8032d1ec78fc32}{tabla\_distancias}();
+115         \}
+116         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ordre == \textcolor{stringliteral}{"inicializa\_clusters"}) \{
+117             cout << \textcolor{stringliteral}{"# "} << ordre << endl;
+118             \hyperlink{class_taula__de__distancies}{Taula\_de\_distancies} taula\_aux = Taula;
+119             Arbre.\hyperlink{class_cjt___clusters_a7dec4a423a1dbcf6d0351e00dd653eee}{inicializa\_clusters}(Mostra, Taula);
+120             taula\_aux.\hyperlink{class_taula__de__distancies_a494108f6c1af52fd9f8032d1ec78fc32}{tabla\_distancias}();
+121         \}
+122         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ordre == \textcolor{stringliteral}{"ejecuta\_paso\_wpgma"}) \{
+123             cout << \textcolor{stringliteral}{"# "} << ordre << endl;
+124             \textcolor{keywordtype}{int} num\_c = Arbre.\hyperlink{class_cjt___clusters_ad00d2fe80f0b0dc1e593a91f8be6b761}{numero\_clusters}();
+125             \textcolor{keywordflow}{if} (num\_c > 2) \{
+126                 Arbre.\hyperlink{class_cjt___clusters_a1656b81e5200625b44c8f138c09af068}{ejecutar\_paso\_wpgma}();
+127                 Arbre.\hyperlink{class_cjt___clusters_a6a261f0f5ca471e257d6b17e91b4887a}{taula\_clusters\_imprime}();
+128             \}
+129             \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"ERROR: num\_clusters <= 1"} << endl;
+130         \}
+131         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ordre == \textcolor{stringliteral}{"imprime\_cluster"}) \{
+132             \textcolor{keywordtype}{string} id;
+133             cin >> id;
+134             cout << \textcolor{stringliteral}{"# "} << ordre << \textcolor{stringliteral}{" "} << \textcolor{keywordtype}{id} << endl;
+135             \textcolor{keywordflow}{if} (Arbre.\hyperlink{class_cjt___clusters_a4fcda36a68e8fe48d787dfd14e9b222b}{existe\_cluster}(\textcolor{keywordtype}{id})) \{
+136                 \hyperlink{class_bin_tree}{BinTree<pair<string,double>}> aux = Arbre.
+      \hyperlink{class_cjt___clusters_aca3506a7084d53e251ff052b0bbaf5bb}{retorna\_subarb}(\textcolor{keywordtype}{id});
+137                 Arbre.\hyperlink{class_cjt___clusters_a19510eceda5d5bf39d7091a28bf5f00c}{imprime\_cluster\_aux}(aux);
+138             \}
+139             \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"ERROR: El cluster "} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{" no existe."} << endl;
+140         \}
+141         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ordre == \textcolor{stringliteral}{"imprime\_arbol\_filogenetico"}) \{
+142             cout << \textcolor{stringliteral}{"# "} << ordre << endl;
+143             Arbre.\hyperlink{class_cjt___clusters_a7dec4a423a1dbcf6d0351e00dd653eee}{inicializa\_clusters}(Mostra, Taula);
+144             \textcolor{keywordtype}{int} num\_c = Arbre.\hyperlink{class_cjt___clusters_ad00d2fe80f0b0dc1e593a91f8be6b761}{numero\_clusters}();
+145             \textcolor{keywordflow}{if} (num\_c > 0) \{
+146                 \textcolor{keywordflow}{while} (num\_c > 1) \{
+147                     Arbre.\hyperlink{class_cjt___clusters_a1656b81e5200625b44c8f138c09af068}{ejecutar\_paso\_wpgma}();
+148                     num\_c = Arbre.\hyperlink{class_cjt___clusters_ad00d2fe80f0b0dc1e593a91f8be6b761}{numero\_clusters}();
+149                 \}
+150                 Arbre.\hyperlink{class_cjt___clusters_a95262506a2fdc5455ce104fb84649ee9}{imprime\_arbol\_filogenetico}();
+151             \}
+152             \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"ERROR: El conjunto de clusters es vacio."} << endl;
+153         \}
+154         cin >> ordre;
+155         cout << endl;
+156     \}
+157 \}
+\end{DoxyCode}

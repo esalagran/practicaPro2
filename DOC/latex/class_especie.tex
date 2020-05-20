@@ -1,0 +1,110 @@
+\hypertarget{class_especie}{}\section{Referencia de la Clase Especie}
+\label{class_especie}\index{Especie@{Especie}}
+
+
+Representa una especie.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_especie_a272c2488719cc9874b2f174906675b3d}{Especie} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_especie_ac00e224134b1fd6e12ab653b71fd142d}{Especie} (string id, string gen, int k)
+\item 
+vector$<$ string $>$ \hyperlink{class_especie_a68f3f4274cf4f763a03e6cc0d633f25e}{partir\+\_\+gen} (int k)
+\begin{DoxyCompactList}\small\item\em Creadora de Sub\+\_\+gen. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{class_especie_a550a75c9df1055a7c14051efaed2d628}{obtener\+\_\+sub\+\_\+gen} ()
+\begin{DoxyCompactList}\small\item\em Consultora del sub\+\_\+gen. \end{DoxyCompactList}\item 
+string \hyperlink{class_especie_abcbabd759ef608ce6901f8348dfca906}{obtener\+\_\+gen} ()
+\begin{DoxyCompactList}\small\item\em Consultora del gen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa una especie. 
+
+Contiene dos strings no vacios, el primero representa el identificador de la especie y el segundo es el gen 
+
+Definición en la línea 20 del archivo Especie.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_especie_a272c2488719cc9874b2f174906675b3d}\label{class_especie_a272c2488719cc9874b2f174906675b3d}} 
+\index{Especie@{Especie}!Especie@{Especie}}
+\index{Especie@{Especie}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{Especie()}{Especie()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Especie\+::\+Especie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una especie con id = id, gen = gen y con el Sub\+\_\+gen 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_ac00e224134b1fd6e12ab653b71fd142d}\label{class_especie_ac00e224134b1fd6e12ab653b71fd142d}} 
+\index{Especie@{Especie}!Especie@{Especie}}
+\index{Especie@{Especie}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{Especie()}{Especie()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Especie\+::\+Especie (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{string}]{gen,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_especie_a68f3f4274cf4f763a03e6cc0d633f25e}\label{class_especie_a68f3f4274cf4f763a03e6cc0d633f25e}} 
+\index{Especie@{Especie}!partir\+\_\+gen@{partir\+\_\+gen}}
+\index{partir\+\_\+gen@{partir\+\_\+gen}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{partir\+\_\+gen()}{partir\_gen()}}
+{\footnotesize\ttfamily vector$<$string$>$ Especie\+::partir\+\_\+gen (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Creadora de Sub\+\_\+gen. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el gen partido en particiones de k 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_a550a75c9df1055a7c14051efaed2d628}\label{class_especie_a550a75c9df1055a7c14051efaed2d628}} 
+\index{Especie@{Especie}!obtener\+\_\+sub\+\_\+gen@{obtener\+\_\+sub\+\_\+gen}}
+\index{obtener\+\_\+sub\+\_\+gen@{obtener\+\_\+sub\+\_\+gen}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{obtener\+\_\+sub\+\_\+gen()}{obtener\_sub\_gen()}}
+{\footnotesize\ttfamily vector$<$string$>$ Especie\+::obtener\+\_\+sub\+\_\+gen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora del sub\+\_\+gen. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+retorna un vector con el subgen dividido en divisiones de k 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_especie_abcbabd759ef608ce6901f8348dfca906}\label{class_especie_abcbabd759ef608ce6901f8348dfca906}} 
+\index{Especie@{Especie}!obtener\+\_\+gen@{obtener\+\_\+gen}}
+\index{obtener\+\_\+gen@{obtener\+\_\+gen}!Especie@{Especie}}
+\subsubsection{\texorpdfstring{obtener\+\_\+gen()}{obtener\_gen()}}
+{\footnotesize\ttfamily string Especie\+::obtener\+\_\+gen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora del gen. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+retorna un string que contiene el gen 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_especie_8hh}{Especie.\+hh}\end{DoxyCompactItemize}
