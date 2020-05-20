@@ -12,6 +12,7 @@ void Cjt_Clusters::ejecutar_paso_wpgma() {
     string nou_cluster = id_minims.first + id_minims.second;
     Taula_Clusters.afegeix_especie_cluster(nou_cluster, id_minims);
     
+    
     double distancia_cluster = Taula_Clusters.distancia(id_minims.first,id_minims.second)/2;
     Taula_Clusters.eliminar_especie(id_minims.first);
     Taula_Clusters.eliminar_especie(id_minims.second);
@@ -25,6 +26,7 @@ void Cjt_Clusters::ejecutar_paso_wpgma() {
     map<string, BinTree< pair<string, double>>>::iterator it2 = Arbre.find(id_minims.second);
     BinTree<pair<string,double>> clu_righ = it2->second;
     BinTree<pair<string,double>> arbre_nou(nou_clu,clu_left,clu_righ);
+    
     Arbre.insert(make_pair(nou_cluster,arbre_nou));
     Arbre.erase(id_minims.first);
     Arbre.erase(id_minims.second);
