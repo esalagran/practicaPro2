@@ -1,0 +1,67 @@
+# crea_especie a AAAAAAAAAAAAAAGAAAAAAA
+
+# crea_especie b AAGAAAAAAAAAAAAAAAAAAA
+
+# crea_especie c AAAGAAAAAAAAAAAAAAAAAA
+
+# crea_especie d AAAAGAAAAAAAAAAAAAAAAA
+
+# crea_especie e AAAAAGAAAAAAAAAAAAAAAA
+
+# crea_especie f AAAAAAGAAAAAAAAAAAAAAA
+
+# crea_especie g AAAAAAAGAAAAAAAAAAAAAA
+
+# crea_especie h AAAAAAAAGAAAAAAAAAAAAA
+
+# crea_especie i AAAAAAAAAGAAAAAAAAAAAA
+
+# crea_especie j AAAAAAAAAAGAAAAAAAAAAA
+
+# crea_especie k AAAAAAAAAAAGAAAAAAAAAA
+
+# crea_especie l AAAAAAAAAAAAGAAAAAAAAA
+
+# crea_especie m AAAAAAAAAAAAAGAAAAAAAA
+
+# crea_especie n AAAAAAAAAAAAAAGAAAAAAA
+
+# crea_especie o AAAAAAAAAAAAAAAAAAAGAA
+
+# imprime_cjt_especies
+a AAAAAAAAAAAAAAGAAAAAAA
+b AAGAAAAAAAAAAAAAAAAAAA
+c AAAGAAAAAAAAAAAAAAAAAA
+d AAAAGAAAAAAAAAAAAAAAAA
+e AAAAAGAAAAAAAAAAAAAAAA
+f AAAAAAGAAAAAAAAAAAAAAA
+g AAAAAAAGAAAAAAAAAAAAAA
+h AAAAAAAAGAAAAAAAAAAAAA
+i AAAAAAAAAGAAAAAAAAAAAA
+j AAAAAAAAAAGAAAAAAAAAAA
+k AAAAAAAAAAAGAAAAAAAAAA
+l AAAAAAAAAAAAGAAAAAAAAA
+m AAAAAAAAAAAAAGAAAAAAAA
+n AAAAAAAAAAAAAAGAAAAAAA
+o AAAAAAAAAAAAAAAAAAAGAA
+
+# tabla_distancias
+a: b (0) c (0) d (0) e (0) f (0) g (0) h (0) i (0) j (0) k (0) l (0) m (0) n (0) o (0)
+b: c (0) d (0) e (0) f (0) g (0) h (0) i (0) j (0) k (0) l (0) m (0) n (0) o (0)
+c: d (0) e (0) f (0) g (0) h (0) i (0) j (0) k (0) l (0) m (0) n (0) o (0)
+d: e (0) f (0) g (0) h (0) i (0) j (0) k (0) l (0) m (0) n (0) o (0)
+e: f (0) g (0) h (0) i (0) j (0) k (0) l (0) m (0) n (0) o (0)
+f: g (0) h (0) i (0) j (0) k (0) l (0) m (0) n (0) o (0)
+g: h (0) i (0) j (0) k (0) l (0) m (0) n (0) o (0)
+h: i (0) j (0) k (0) l (0) m (0) n (0) o (0)
+i: j (0) k (0) l (0) m (0) n (0) o (0)
+j: k (0) l (0) m (0) n (0) o (0)
+k: l (0) m (0) n (0) o (0)
+l: m (0) n (0) o (0)
+m: n (0) o (0)
+n: o (0)
+o:
+
+# imprime_arbol_filogenetico
+[abcdefghijklmno]
+

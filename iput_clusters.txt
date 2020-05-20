@@ -1,0 +1,23 @@
+3
+crea_especie a    AAAAAAAAAAAAAAGAAAAAAA
+crea_especie b    AAGAAAAAAAAAAAAAAAAAAA
+crea_especie c    AAAGAAAAAAAAAAAAAAAAAA
+crea_especie d    AAAAGAAAAAAAAAAAAAAAAA
+crea_especie e    AAAAAGAAAAAAAAAAAAAAAA
+crea_especie f    AAAAAAGAAAAAAAAAAAAAAA
+crea_especie g    AAAAAAAGAAAAAAAAAAAAAA
+crea_especie h    AAAAAAAAGAAAAAAAAAAAAA
+crea_especie i    AAAAAAAAAGAAAAAAAAAAAA
+crea_especie j    AAAAAAAAAAGAAAAAAAAAAA
+crea_especie k    AAAAAAAAAAAGAAAAAAAAAA
+crea_especie l    AAAAAAAAAAAAGAAAAAAAAA
+crea_especie m    AAAAAAAAAAAAAGAAAAAAAA
+crea_especie n    AAAAAAAAAAAAAAGAAAAAAA
+crea_especie o    AAAAAAAAAAAAAAAAAAAGAA
+
+imprime_cjt_especies
+tabla_distancias
+
+imprime_arbol_filogenetico
+
+fin

@@ -74,21 +74,7 @@ void Taula_de_distancies::buidar_taula() {
     Taula.clear();
 }
 
-//No sé si això afectarà molt o no
-/*pair<string,string> Taula_de_distancies::dist_min() {
-    double min = 101;
-    pair<string, string> minim_noms;
-    for (map <string, map<string,double>>::const_iterator it1 = Taula.begin(); it1 != Taula.end(); ++it1) {
-        for (map<string,double>::const_iterator it2 = it1->second.begin(); it2 != it1->second.end(); ++it2) {
-            if (it2->first > it1->first and it2->second < min) {
-                min = it2->second;
-                minim_noms.first = it1->first;
-                minim_noms.second = it2->first;
-            }
-        }
-    }
-    return minim_noms;
-}*/
+
 
 pair<string,string> Taula_de_distancies::dist_min() {
     double min = 101;
